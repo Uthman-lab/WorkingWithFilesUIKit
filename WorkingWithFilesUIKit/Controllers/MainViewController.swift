@@ -14,7 +14,7 @@ class MainViewController:  UIViewController {
     // MARK: views
     
     private lazy var openButton: UIButton = {
-       let configuredbutton = configurebutton()
+       let configuredbutton = configurebutton("Open a file")
         configuredbutton.addTarget(
             self,
             action: #selector(openFiles),
@@ -23,12 +23,22 @@ class MainViewController:  UIViewController {
         return configuredbutton
     }()
     
+    private lazy var gallaryButton: UIButton = {
+       let configuredbutton = configurebutton("Open in app Gallery")
+        configuredbutton.addTarget(
+            self,
+            action: #selector(openGallery),
+            for: .touchUpInside
+        )
+        return configuredbutton
+    }()
+    
     // MARK: life cycle methods
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         view.addSubview(openButton)
+        view.addSubview(gallaryButton)
         view.backgroundColor = .darkGray
     }
     
@@ -38,9 +48,9 @@ class MainViewController:  UIViewController {
     
     // MARK: private methods
     
-    private func configurebutton() -> UIButton {
+    private func configurebutton(_ title: String) -> UIButton {
         let button = UIButton(type: .system)
-        button.setTitle("Open a file", for: .normal)
+        button.setTitle( title, for: .normal)
         button.backgroundColor = .white
         button.layer.cornerRadius = 10
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -57,6 +67,16 @@ class MainViewController:  UIViewController {
             ),
             openButton.widthAnchor.constraint(
                 equalToConstant: 100
+            ),
+            // Gallery button
+            gallaryButton.centerXAnchor.constraint(
+                equalTo: view.centerXAnchor
+            ),
+            gallaryButton.widthAnchor.constraint(
+                equalToConstant: 150
+            ),
+            gallaryButton.topAnchor.constraint(
+                equalTo: openButton.bottomAnchor, constant: 24
             )
         ])
     }
@@ -76,28 +96,29 @@ class MainViewController:  UIViewController {
         present(picker, animated: false)
     }
     
-    private func renderAudio(url: URL) {
-        do {
-            let audioPlayer = try AVAudioPlayer(contentsOf: url)
-            audioPlayer.play()
-        } catch {
-            
-        }
+    @objc private func openGallery() {
+        let gallery = GalleryViewController()
+        navigationController?.pushViewController(
+            gallery,
+            animated: false
+        )
     }
-    private func renderView(url: URL) {
+    
+    private func renderView(url: URL?) {
         let playerController = AVPlayerViewController()
+        guard let url = url else { return }
         playerController.player = AVPlayer(url: url)
         displaySheet(viewController: playerController)
     }
     
-    private func  renderPDF(url: URL) {
+    private func  renderView(url: URL) {
         let pdf = PDFView()
         let document = PDFDocument(url: url)
         pdf.document = document
         displaySheet(view: pdf)
     }
     
-    private func renderImage(image: UIImage) {
+    private func renderView(image: UIImage) {
         let uiImgeView = UIImageView()
         uiImgeView.image = image
         uiImgeView.sizeToFit()
@@ -118,15 +139,15 @@ class MainViewController:  UIViewController {
 
 extension MainViewController: UIDocumentPickerDelegate {
     func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
-        guard let url = urls.first else { return}
+        guard let url = urls.first else { return }
         
         switch url.mediaFile {
         case .empty:
-            UIView()
+            renderView(url: nil)
         case .image(let image):
-            renderImage(image: image)
+            renderView(image: image)
         case .pdf(let url):
-            renderPDF(url: url)
+            renderView(url: url)
         case .vidoe(let url):
             renderView(url: url)
         }
