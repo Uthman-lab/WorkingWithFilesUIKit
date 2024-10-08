@@ -1,0 +1,78 @@
+{
+  "" : {
+    "diagnostics" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/WorkingWithFilesUIKit-master.dia",
+    "emit-module-dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/WorkingWithFilesUIKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/WorkingWithFilesUIKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/WorkingWithFilesUIKit-master.swiftdeps"
+  },
+  "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/WorkingWithFilesUIKit/AppDelegate.swift" : {
+    "const-values" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/WorkingWithFilesUIKit/Controllers/GalleryViewController.swift" : {
+    "const-values" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GalleryViewController.swiftconstvalues",
+    "dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GalleryViewController.d",
+    "diagnostics" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GalleryViewController.dia",
+    "index-unit-output-path" : "/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GalleryViewController.o",
+    "llvm-bc" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GalleryViewController.bc",
+    "object" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GalleryViewController.o",
+    "swift-dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GalleryViewController.swiftdeps",
+    "swiftmodule" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GalleryViewController~partial.swiftmodule"
+  },
+  "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/WorkingWithFilesUIKit/Controllers/GestureViewController.swift" : {
+    "const-values" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GestureViewController.swiftconstvalues",
+    "dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GestureViewController.d",
+    "diagnostics" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GestureViewController.dia",
+    "index-unit-output-path" : "/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GestureViewController.o",
+    "llvm-bc" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GestureViewController.bc",
+    "object" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GestureViewController.o",
+    "swift-dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GestureViewController.swiftdeps",
+    "swiftmodule" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/GestureViewController~partial.swiftmodule"
+  },
+  "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/WorkingWithFilesUIKit/Controllers/MainViewController.swift" : {
+    "const-values" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/MainViewController.swiftconstvalues",
+    "dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/MainViewController.d",
+    "diagnostics" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/MainViewController.dia",
+    "index-unit-output-path" : "/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/MainViewController.o",
+    "llvm-bc" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/MainViewController.bc",
+    "object" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/MainViewController.o",
+    "swift-dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/MainViewController.swiftdeps",
+    "swiftmodule" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/MainViewController~partial.swiftmodule"
+  },
+  "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/WorkingWithFilesUIKit/Helpers/extensions.swift" : {
+    "const-values" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/extensions.swiftconstvalues",
+    "dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/extensions.d",
+    "diagnostics" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/extensions.dia",
+    "index-unit-output-path" : "/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/extensions.o",
+    "llvm-bc" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/extensions.bc",
+    "object" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/extensions.o",
+    "swift-dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/extensions.swiftdeps",
+    "swiftmodule" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/extensions~partial.swiftmodule"
+  },
+  "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/WorkingWithFilesUIKit/SceneDelegate.swift" : {
+    "const-values" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/SceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/SceneDelegate.d",
+    "diagnostics" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/SceneDelegate.dia",
+    "index-unit-output-path" : "/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/SceneDelegate.o",
+    "swift-dependencies" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/SceneDelegate.swiftdeps",
+    "swiftmodule" : "/Users/amalitech-pc-593/Documents/projects/work/WorkingWithFilesUIKit/build/WorkingWithFilesUIKit.build/Debug-iphonesimulator/WorkingWithFilesUIKit.build/Objects-normal/arm64/SceneDelegate~partial.swiftmodule"
+  }
+}
