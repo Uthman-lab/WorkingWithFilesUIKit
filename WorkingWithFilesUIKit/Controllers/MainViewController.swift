@@ -9,10 +9,10 @@ import UIKit
 import AVKit
 import PDFKit
 
-class MainViewController:  UIViewController {
-    
+class MainViewController: UIViewController {
+
     // MARK: views
-    
+
     private lazy var openButton: UIButton = {
        let configuredbutton = configurebutton("Open a file")
         configuredbutton.addTarget(
@@ -22,7 +22,7 @@ class MainViewController:  UIViewController {
         )
         return configuredbutton
     }()
-    
+
     private lazy var gallaryButton: UIButton = {
        let configuredbutton = configurebutton("Open in app Gallery")
         configuredbutton.addTarget(
@@ -32,22 +32,22 @@ class MainViewController:  UIViewController {
         )
         return configuredbutton
     }()
-    
+
     // MARK: life cycle methods
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(openButton)
         view.addSubview(gallaryButton)
         view.backgroundColor = .darkGray
     }
-    
+
     override func viewDidLayoutSubviews() {
         activateConstraints()
     }
-    
+
     // MARK: private methods
-    
+
     private func configurebutton(_ title: String) -> UIButton {
         let button = UIButton(type: .system)
         button.setTitle( title, for: .normal)
@@ -56,7 +56,7 @@ class MainViewController:  UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }
-    
+
     private func activateConstraints() {
         NSLayoutConstraint.activate([
             openButton.centerXAnchor.constraint(
@@ -80,8 +80,8 @@ class MainViewController:  UIViewController {
             )
         ])
     }
-    
-    @objc private func openFiles(){
+
+    @objc private func openFiles() {
         let picker = UIDocumentPickerViewController(
             forOpeningContentTypes: [
                 .png,
@@ -95,7 +95,7 @@ class MainViewController:  UIViewController {
         picker.delegate = self
         present(picker, animated: false)
     }
-    
+
     @objc private func openGallery() {
         let gallery = GalleryViewController()
         navigationController?.pushViewController(
@@ -103,21 +103,21 @@ class MainViewController:  UIViewController {
             animated: false
         )
     }
-    
+
     private func renderView(url: URL?) {
         let playerController = AVPlayerViewController()
         guard let url = url else { return }
         playerController.player = AVPlayer(url: url)
         displaySheet(viewController: playerController)
     }
-    
+
     private func  renderView(url: URL) {
         let pdf = PDFView()
         let document = PDFDocument(url: url)
         pdf.document = document
         displaySheet(view: pdf)
     }
-    
+
     private func renderView(image: UIImage) {
         let uiImgeView = UIImageView()
         uiImgeView.image = image
@@ -125,13 +125,13 @@ class MainViewController:  UIViewController {
         uiImgeView.contentMode = .scaleAspectFill
         displaySheet(view: uiImgeView)
     }
-    
+
     private func displaySheet(view: UIView) {
         let viewController = UIViewController()
         viewController.view = view
         present(viewController, animated: false)
     }
-    
+
     private func displaySheet(viewController: UIViewController) {
         present(viewController, animated: false)
     }
@@ -140,7 +140,7 @@ class MainViewController:  UIViewController {
 extension MainViewController: UIDocumentPickerDelegate {
     func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
         guard let url = urls.first else { return }
-        
+
         switch url.mediaFile {
         case .empty:
             renderView(url: nil)

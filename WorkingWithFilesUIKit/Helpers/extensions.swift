@@ -20,7 +20,7 @@ extension URL {
         default:
                 .empty
         }
-        
+
     }
 }
 

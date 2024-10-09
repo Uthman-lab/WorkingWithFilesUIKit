@@ -8,14 +8,14 @@
 import UIKit
 
 class GestureViewController: UIViewController {
-    
+
     // MARK: private variables
-    
+
     var zoomDegree = ZoomDegree.none
     var zoomFactor = 1.5
-    
+
     // MARK: private view variables
-    
+
     private lazy var imageView: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(systemName: "car")
@@ -23,30 +23,30 @@ class GestureViewController: UIViewController {
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
-    
+
     // MARK: life cycle methods
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(imageView)
         view.backgroundColor = .darkGray
         imageView.isUserInteractionEnabled = true
         addGesturesToImage()
-       
+
     }
-    
+
     override func viewDidLayoutSubviews() {
         setConstraints()
     }
-    
+
     // MARK: public methods
-    
+
     func setImage(_ image: UIImage) {
         imageView.image = image
     }
-    
+
     // MARK: private methods
-    
+
     private func addGesturesToImage() {
         let panRecognizer = UIPanGestureRecognizer(
             target: self,
@@ -60,9 +60,9 @@ class GestureViewController: UIViewController {
         imageView.addGestureRecognizer(doubleTapRecognizer)
         imageView.addGestureRecognizer(panRecognizer)
     }
-    
+
     @objc private func handleZoom(_ recognizer: UITapGestureRecognizer) {
-        
+
         switch zoomDegree {
         case .none:
             zoomDegree = .first
@@ -78,7 +78,7 @@ class GestureViewController: UIViewController {
             zoomWithAnimation(1, 1)
         }
     }
-    
+
     private func zoomWithAnimation(
         _ scaleX: CGFloat,
         _ scaleY: CGFloat
@@ -90,7 +90,7 @@ class GestureViewController: UIViewController {
             )
         }
     }
-    
+
     private func setConstraints() {
         NSLayoutConstraint.activate([
             imageView.centerXAnchor.constraint(
@@ -107,19 +107,19 @@ class GestureViewController: UIViewController {
             )
         ])
     }
-    
+
     @objc private func handlePan(recognizer: UIPanGestureRecognizer) {
-        var x = imageView.center.x
-        var y = imageView.center.y
+        var xCordinate = imageView.center.x
+        var yCordinate = imageView.center.y
         if checkTransitionStatus(recognizer.state) {
             let translation = recognizer.translation(in: view)
-            x += translation.x
-            y += translation.y
-            imageView.center = CGPoint( x: x, y: y)
+            xCordinate += translation.x
+            yCordinate += translation.y
+            imageView.center = CGPoint( x: xCordinate, y: yCordinate)
             recognizer.setTranslation(.zero, in: view)
-        } 
+        }
     }
-    
+
     private func checkTransitionStatus(
         _ state: UIGestureRecognizer.State
     ) -> Bool {

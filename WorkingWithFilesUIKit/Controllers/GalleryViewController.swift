@@ -8,30 +8,30 @@
 import UIKit
 import Photos
 
-class GalleryViewController:  UIViewController {
-    
+class GalleryViewController: UIViewController {
+
     // MARK: private variables
-    
+
     private lazy var collectionView: UICollectionView = {
         let collection = configureCollection()
         requestPermission()
         return collection
     }()
-    
+
     private var images: [UIImage] = []
-    
+
     // MARK: life cycle methods
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.backgroundColor = .darkGray 
+        collectionView.backgroundColor = .darkGray
         view.addSubview(collectionView)
     }
-    
+
     // MARK: private methods
-    
+
     private func requestPermission() {
         PHPhotoLibrary.requestAuthorization { [weak self] status in
             if status == .authorized {
@@ -41,25 +41,25 @@ class GalleryViewController:  UIViewController {
             }
         }
     }
-    
+
     private func configureCollection() -> UICollectionView {
         let layout = UICollectionViewFlowLayout()
-        
+
         let itemsPerRow: CGFloat = 3
         let padding: CGFloat = 10
         let totalPadding = padding * (itemsPerRow + 1)
         let itemWidth = (view.frame.width - totalPadding) / itemsPerRow
-        
+
         layout.itemSize = CGSize(width: itemWidth, height: itemWidth)
         layout.scrollDirection = .vertical
         layout.minimumInteritemSpacing = padding
         layout.minimumLineSpacing = padding
-        
+
         let collectionView = UICollectionView(
             frame: view.frame,
             collectionViewLayout: layout
         )
-        
+
         collectionView.contentInset = .init(
             top: padding,
             left: padding,
@@ -79,11 +79,11 @@ class GalleryViewController:  UIViewController {
             with: .image,
             options: fetchOptions
         )
-        
+
         let imageManager = PHCachingImageManager()
         let targetSize = CGSize(width: 100, height: 100)
-        
-        fetchResult.enumerateObjects { (asset, index, stop) in
+
+        fetchResult.enumerateObjects { (asset, _, _) in
             imageManager.requestImage(
                 for: asset,
                 targetSize: targetSize,
@@ -102,14 +102,14 @@ class GalleryViewController:  UIViewController {
 }
 
 extension GalleryViewController: UICollectionViewDataSource {
-    
+
     func collectionView(
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
         return images.count
     }
-    
+
     func collectionView(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
@@ -125,7 +125,7 @@ extension GalleryViewController: UICollectionViewDataSource {
         cell.contentView.addSubview(imageContent)
         return cell
     }
-    
+
     private func configureImage(
         image: UIImage,
         cell: UICollectionViewCell
